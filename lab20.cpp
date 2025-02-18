@@ -57,7 +57,6 @@ Unit::Unit(string t, string n) {
     }
     hp = hpmax;  
     guard_on = false;
-    dodge_on = false;
     equipment = NULL;
 }
 
@@ -77,6 +76,7 @@ void Unit::showStatus() {
 
 void Unit::newTurn() {
     guard_on = false; 
+    dodge_on = false;
 }
 
 int Unit::beAttacked(int oppatk) {
